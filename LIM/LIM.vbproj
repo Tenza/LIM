@@ -1,0 +1,617 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5EC8482E-BD7F-4E1A-8780-486DA44D5027}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>LIM.My.MyApplication</StartupObject>
+    <RootNamespace>LIM</RootNamespace>
+    <AssemblyName>LIM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint></ManifestCertificateThumbprint>
+    <ManifestKeyFile></ManifestKeyFile>
+    <GenerateManifests></GenerateManifests>
+    <SignManifests></SignManifests>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>pt-PT</TargetCulture>
+    <ProductName>LIM</ProductName>
+    <PublisherName>LIM</PublisherName>
+    <SuiteName>Lan Instant Messaging</SuiteName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>LIM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LIM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="connect.Designer.vb">
+      <DependentUpon>connect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="connect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions.vb" />
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="main.Designer.vb">
+      <DependentUpon>main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opt.Designer.vb">
+      <DependentUpon>opt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="opt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pedidos.Designer.vb">
+      <DependentUpon>pedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receberfile.Designer.vb">
+      <DependentUpon>receberfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="receberfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registar.Designer.vb">
+      <DependentUpon>registar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transferencias.Designer.vb">
+      <DependentUpon>transferencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="transferencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="voip.Designer.vb">
+      <DependentUpon>voip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="voip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="connect.resx">
+      <DependentUpon>connect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="opt.resx">
+      <DependentUpon>opt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pedidos.resx">
+      <DependentUpon>pedidos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="receberfile.resx">
+      <DependentUpon>receberfile.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registar.resx">
+      <DependentUpon>registar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transferencias.resx">
+      <DependentUpon>transferencias.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="voip.resx">
+      <DependentUpon>voip.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nw_sms.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express Edition</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\citar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_fundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\offline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\away.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nova_sms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terminar_sessao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mudar_avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preferências.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apagar_sms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voltar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proximo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nv_conversa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transferencias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\avi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\bmp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\divx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\dll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\firefox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\flv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\iso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\jpeg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\max.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\mov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\movie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\mp3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\mp4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\mpeg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\onenote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\powerpoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\psd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\publisher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\rar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\rm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\rtf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\torrent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\txt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\visio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\wav.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\wma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\word.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\zip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos de ficheiros\vob.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="away.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="brb.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="busy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\aparecnia1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\aparecnia2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\contas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\contas2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\fonte1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\fonte2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\opçoes1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\opçoes2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\pass1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\pass2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\opt_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\opt_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\opt_center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\btn_cancel_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\btn_ok_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\opt_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\opt_opt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\pass_opt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\acc_opt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\appl_opt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options buttons\letra_opt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voip\img_away.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voip\img_speak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voip\img_nocall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voip\img_yescall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voip\calling.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voip\audio_mute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voip\audio.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,6 +1,6 @@
 ##LIM
 
-Lan Instant Messenger
+Lan Instant Messaging
 
 ###About
 
