@@ -17,7 +17,7 @@ Lan Instant Messaging
 - The UI is fully customizable, from the position of the containers to the skin of the application.
 - It is also possible to set our fonts, visibility and other options.
 
-###Application
+##Application
 
 [![Click here to view the image!](http://s27.postimg.org/ivhavrfab/login.jpg)](http://s27.postimg.org/ivhavrfab/login.jpg)
 
